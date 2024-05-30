@@ -1,5 +1,5 @@
-import { PostExampleClientComponent } from "@/app/example/components/PostExampleClientComponent";
-import { GetExampleClientComponent } from "./components/GetExampleClientComponent";
+import { GetExampleClientComponent } from "@/app/example/client/components/GetExampleClientComponent";
+import { PostExampleClientComponent } from "@/app/example/client/components/PostExampleClientComponent";
 
 export default function Example() {
 	return (
