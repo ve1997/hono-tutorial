@@ -1,5 +1,6 @@
 import { zValidator } from "@hono/zod-validator";
 import { Hono } from "hono";
+import { handle } from "hono/vercel";
 import { z } from "zod";
 
 const app = new Hono().basePath("/api");
@@ -36,6 +37,6 @@ const route = app
 		},
 	);
 
-export const GET = app.fetch;
-export const POST = app.fetch;
+export const GET = handle(app);
+export const POST = handle(app);
 export type AppType = typeof route;
